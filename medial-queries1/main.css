@@ -1,3 +1,22 @@
 body {
   background: blanchedalmond;
 }
+.container {
+  display: flex;
+  background: grey;
+  margin: 50px;
+  flex-direction: column;
+
+}
+div >.b, .c{
+  margin: 10px;
+  border: solid 2px black;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+.a{
+  flex-direction: column;
+  
+}
