@@ -18,5 +18,9 @@ div >.b, .c{
 }
 .a{
   flex-direction: column;
+
+}
+div{
+  align-self: center;
   
 }
