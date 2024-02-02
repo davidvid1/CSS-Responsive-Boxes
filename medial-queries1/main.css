@@ -1,26 +1,36 @@
 body {
   background: blanchedalmond;
 }
+
+* {
+  border: 1px solid teal;
+}
+
 .container {
   display: flex;
-  background: grey;
-  margin: 50px;
+  min-height: 100vh;
   flex-direction: column;
-
+  justify-content: space-between;
 }
-div >.b, .c{
-  margin: 10px;
-  border: solid 2px black;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
 
+header, footer  {
+  flex-grow: 1;
 }
-.a{
-  flex-direction: column;
 
+main {
+  flex-grow:3;
 }
-div{
-  align-self: center;
-  
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header {
+    width: 100%;
+  }
+  main, footer, header {
+    margin: 1em;
+  }
 }
